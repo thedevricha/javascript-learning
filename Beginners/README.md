@@ -1,2 +1,0 @@
-# javascript-learning
-Javascript Learning
