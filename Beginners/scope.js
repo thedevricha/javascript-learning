@@ -1,4 +1,4 @@
-// Global scope
+/* // Global scope
 const occupation = 'Super Hero' 
 const name = 'Avangers'
 
@@ -15,4 +15,23 @@ function printFunction(){
     console.log(name)
     console.log(occupation)
 }
-printFunction()
+printFunction() */
+
+let globalVar = 'Global scope!';
+
+function functionScope(){
+    let functionVar = 'Function scope!';
+    if(true){
+        let blockVar = 'Block scope!';
+        console.log(blockVar); // Output: Block scope!
+    }
+    console.log(globalVar);     // Output: Global scope!
+    console.log(functionVar);   // Output: Function scope!
+    console.log(blockVar);      // Error: blockVar is not defined
+}
+
+functionScope();
+console.log(globalVar);
+console.log(functionVar);   // Error: functionVar is not defined
+console.log(blockVar);      // Error: blockVar is not defined
+
