@@ -1,8 +1,8 @@
 /* String */
 console.log("== String ==");
-const fname = 'Richa';
-const language = "JavaScript";
-const study = `webDev`;
+const fname = 'Richa'; // Single quotes
+const language = "JavaScript"; // Double quotes
+const study = `webDev`; // Backticks
 console.log(fname, language, study); // Output: Richa JavaScript webDev
 
 /* Number */
