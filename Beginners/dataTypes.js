@@ -35,12 +35,12 @@ console.log(data); // Output: null
 console.log("== Object ==");
 // object literal
 const person = {
-    fistName: "Richa",
+    firstName: "Richa",
     lastName: "webDev",
     age: 50
 };
 // dot (.) notation for access properties
-console.log(person.fistName); // Output: Richa 
+console.log(person.firstName); // Output: Richa 
 
 /* Array */
 console.log("== Array ==");
