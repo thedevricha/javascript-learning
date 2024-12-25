@@ -13,7 +13,7 @@ console.log(total, PI); // Output: 0 3.14
 
 /* Bigint */
 console.log("== Bigint ==");
-let bigNumber = 1234567890123456789012345678901234567890n;
+const bigNumber = 1234567890123456789012345678901234567890n;
 console.log(bigNumber); // Output: 1234567890123456789012345678901234567890n
 
 /* Boolean */
@@ -35,6 +35,11 @@ console.log(result_1); // Output: undefined
 console.log("== Null ==");
 const data = null;
 console.log(data); // Output: null
+
+/* Symbol */
+console.log("== Symbol ==");
+const uniqueId = Symbol("id");
+console.log(uniqueId); // Output: Symbol(id)
 
 /* Object */
 console.log("== Object ==");
