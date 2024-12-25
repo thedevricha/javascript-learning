@@ -11,6 +11,11 @@ const total = 0;
 const PI = 3.14;
 console.log(total, PI); // Output: 0 3.14
 
+/* Bigint */
+console.log("== Bigint ==");
+let bigNumber = 1234567890123456789012345678901234567890n;
+console.log(bigNumber); // Output: 1234567890123456789012345678901234567890n
+
 /* Boolean */
 console.log("== Boolean ==");
 const isPrimeNumber = true;
