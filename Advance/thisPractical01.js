@@ -77,3 +77,37 @@ const memberShip1 = getMembershipDetail.bind(member1, 'Diamond', 2027);
 const memberShip2 = getMembershipDetail.bind(member2, 'Basic', 2028);
 memberShip1(); // Output: Iron Man has a Diamond plan starting in 2027.
 memberShip2(); // Output: Jake Sparrow has a Basic plan starting in 2028.
+
+/* Order of Precedences */
+// Global object
+globalThis.name = "Global Context";
+
+const obj = {
+  name: "Implicit Binding",
+  showName: function () {
+    console.log(this.name);
+  },
+};
+
+// Constructor Function
+function Person(name) {
+  this.name = name;
+}
+
+// Function to test precedence
+function showName() {
+  console.log(this.name);
+}
+
+// 1️⃣ Default Binding
+showName(); // Output: "Global Context" (default to global object)
+
+// 2️⃣ Implicit Binding
+obj.showName(); // Output: "Implicit Binding" (method called on an object)
+
+// 3️⃣ Explicit Binding
+showName.call({ name: "Explicit Binding" }); // Output: "Explicit Binding" (call overrides default/implicit)
+
+// 4️⃣ New Binding (Highest Precedence)
+const newPerson = new Person("New Binding");
+showName.call(newPerson); // Output: "New Binding" (new binding takes precedence over call)
